@@ -18,8 +18,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-</head>
-<body>
 <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   :root{--navy:#0e2240;--navy2:#081627;--red:#c8102e;--red2:#9b0c23;--gold:#c8a24a;--ink:#1d2b3a;--muted:#51627a;--off:#f4f7fb;--line:#dde5ef;--green:#1c7a3d;--orange1:#ff9d1e;--orange2:#e07d00}
@@ -79,7 +77,7 @@
   .ncard{background:#fff;border-radius:14px;padding:26px 28px 24px;box-shadow:0 12px 30px -14px rgba(0,0,0,.5);width:100%}
   .nsrc{color:#c8102e;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;border-left:5px solid #c8102e;padding-left:10px;margin-bottom:12px}
   .nhead{font-family:Georgia,'Times New Roman',serif;font-size:24px;line-height:1.22;color:#10141e;margin:0 0 12px;font-weight:700}
-  .nbody{color:#37414f;font-size:16.5px;margin:0 0 14px;font-family:Georgia,serif}
+  .nbody,.sec.dark .nbody{color:#37414f;font-size:16.5px;margin:0 0 14px;font-family:Georgia,serif}
   .nstat{background:#fdf3f3;border-left:5px solid #c8102e;padding:12px 14px;color:#8c0f23;font-weight:700;font-size:16px;border-radius:0 8px 8px 0}
   .snav{position:absolute;top:42%;transform:translateY(-50%);z-index:5;background:rgba(255,255,255,.92);border:0;color:#0e2240;font-size:34px;line-height:1;width:46px;height:46px;border-radius:50%;cursor:pointer;box-shadow:0 6px 18px -6px rgba(0,0,0,.5);font-weight:800}
   .snav.prev{left:-10px}.snav.next{right:-10px}
@@ -156,6 +154,8 @@
     h1.mb{font-size:clamp(42px,11vw,60px)}
   }
 </style>
+</head>
+<body>
 <!-- HERO: Patriotic Mama Bear + form above the fold -->
 <div class="hero">
   <div class="wrap">
@@ -164,7 +164,7 @@
       <div>
         <div class="mb-kick">From Cheryl, the Patriotic Mama Bear</div>
         <h1 class="mb">A Mama Bear Protects Her <span class="den">Den.</span></h1>
-        <p class="hero-sub">The big brands won't protect your family. So we do. A safer, <strong style="color:#fff">more affordable</strong> way to shop for the 500+ everyday essentials your family already uses, without funding the toxic big-box brands.</p>
+        <p class="hero-sub">The big brands won't protect your family. A mama bear will. A safer, <strong style="color:#fff">more affordable</strong> way to shop for the 500+ everyday essentials your family already uses, without funding the toxic big-box brands.</p>
         <div class="form-card" id="start">
           <div class="fh">Get $100 in Store Credit</div>
           <div class="fs">See the store &amp; start your switch, free. No subscriptions. No monthly commitments.</div>
@@ -188,7 +188,7 @@
     <ellipse cx="196" cy="130" rx="12.5" ry="16.5" transform="rotate(28 196 130)"/>
   </g>
 </svg>
-        <div class="seal-cap">Cheryl Coldiron<span>The Patriotic Mama Bear</span></div>
+        <div class="seal-cap">Cheryl<span>The Patriotic Mama Bear</span></div>
       </div>
     </div>
   </div>
@@ -281,8 +281,8 @@
 <!-- THE MAMA BEAR PROMISE -->
 <div class="sec promise">
   <div class="narrow center">
-    <span class="kick">&#128062; The Mama Bear Promise</span>
-    <h2>Three rules for protecting your den.</h2>
+    <span class="kick">The Mama Bear Promise</span>
+    <h2>My three rules for protecting my den.</h2>
   </div>
   <div class="wrap">
     <div class="pgrid">
@@ -301,13 +301,13 @@
       <div class="quote-card">
         <span class="qm">&#8220;</span>
         <blockquote>A mama bear doesn't ask permission to protect her family.</blockquote>
-        <div class="who">&#128062; Cheryl, the Patriotic Mama Bear</div>
+        <div class="who">Cheryl, the Patriotic Mama Bear</div>
       </div>
       <div>
         <span class="kick">Meet Cheryl, the Patriotic Mama Bear</span>
         <h2>I picked that name for a reason.</h2>
         <p class="lead">Hi, I'm Cheryl. When it comes to my family, I'm a mama bear, and I'm proud to be a patriot.</p>
-        <p>I've watched the big brands get bought up, one after another, by the same handful of giant corporations. Then the lawsuits and recalls started piling up. Those companies don't get my money anymore.</p>
+        <p>I've watched the big brands get bought up, one after another, by the same handful of giant corporations. Then the lawsuits and recalls started piling up. I stopped buying my everyday essentials from them.</p>
         <p>So I shop a different way now. A family-owned American manufacturer, 500+ everyday essentials, safer ingredients, and prices that compare to what I was already paying.</p>
         <p>If you love your family the way I love mine, take a look. Put your info in, and I'll show you the store myself.</p>
         <div class="sig">Cheryl &#128062;</div>
@@ -350,7 +350,7 @@
   </div>
 </div>
 
-<div class="gstrip">&#128062; No subscriptions &#183; No monthly commitments &#183; Your $100 store credit is waiting</div>
+<div class="gstrip">&#128737;&#65039; No subscriptions &#183; No monthly commitments &#183; Your $100 store credit is waiting</div>
 
 <!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; FINAL FORM &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
 <div class="sec alt">
@@ -408,7 +408,7 @@
     iframe.style.setProperty('min-height','0','important');
   }
   function fix(iframe){
-    var wrapper = iframe.closest('.ep-wrapper') || iframe.parentElement;
+    var wrapper = iframe.closest('.ep-wrapper');
     if(!wrapper) return;
     var w = wrapper.getBoundingClientRect().width;
     if(!w) return;
