@@ -396,7 +396,7 @@
 <script>
 (function(){
   var TARGET = 660; /* GHL renders 2-column field rows only when the form viewport is >=650px */
-  var SLACK = 100;  /* the widget reports its height with ~100px of empty body padding below the button */
+  var SLACK = 20;   /* the widget reports its height with ~100px of empty body padding below the button */
   function trimSlack(iframe){
     var hs = iframe.style.height;
     if(!hs) return;
